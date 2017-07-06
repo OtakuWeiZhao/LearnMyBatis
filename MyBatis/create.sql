@@ -27,3 +27,14 @@ INSERT INTO t_emp (emp_no, e_name, job, mgr, hiredate, sal, comm, dept_no) VALUE
 INSERT INTO t_emp (emp_no, e_name, job, mgr, hiredate, sal, comm, dept_no) VALUES (12, 'KOISORA', 'PRESIDENT', 3, '2000-07-11', 5000, 500, 12);
 INSERT INTO t_emp (emp_no, e_name, job, mgr, hiredate, sal, comm, dept_no) VALUES (13, 'IZUMI', 'CLERK', 3, '2016-11-12', 520, NULL, 10);
 INSERT INTO t_emp (emp_no, e_name, job, mgr, hiredate, sal, comm, dept_no) VALUES (14, 'YUZUI', 'MANAGER', 3, '2017-02-16', 1200, 150, 20);
+
+USE mybatis;
+
+CREATE TABLE t_dept(
+  dept_no INT PRIMARY KEY,
+  d_name VARCHAR(20),
+  loc VARCHAR(50)
+);
+
+INSERT INTO t_dept VALUES(10, 'testing', 'beijing');
+INSERT INTO t_dept VALUES(20, 'saling', 'shanghai');
